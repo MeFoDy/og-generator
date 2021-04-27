@@ -1,0 +1,51 @@
+.cover {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 350px auto;
+    align-items: center;
+    grid-gap: 20px;
+    min-height: 100vh;
+}
+
+.cover .header,
+.cover .footer {
+    display: none;
+}
+
+.cover .article > * {
+    display: none;
+}
+
+.cover .article .article__head {
+    display: block;
+}
+
+.cover .article__github,
+.cover .article__minutes-to-read {
+    display: none;
+}
+
+.cover .article__meta > :not(:last-child)::after {
+    display: none;
+}
+
+.cover__img {
+    width: 350px;
+}
+
+.cover .page__content {
+    grid-column: 2 / span 1;
+}
+
+.cover .article__title {
+    margin-top: 0;
+    font-size: 5em;
+}
+
+.cover .article__meta {
+    margin-bottom: 0;
+    padding-top: 1em;
+    font-size: 1.5em;
+    border-top: 1px solid var(--color-accent);
+    border-bottom: none;
+}
